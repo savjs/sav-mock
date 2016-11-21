@@ -1,11 +1,5 @@
-/*
- * @Description     模拟用Response
- * @File 			response.js
- * @Auth 			jetiny@hfjy.com
- */
-
 export class Response {
-  constructor(opts, fn) {
+  constructor (opts, fn) {
     this.headers = {}
     this.callback = fn
     this.statusCode = 200
@@ -20,16 +14,16 @@ export class Response {
     this.error = error
     this.callback(this)
   }
-  getHeader(name) {
+  getHeader (name) {
     return this.headers[name]
   }
-  setHeader(name, value) {
+  setHeader (name, value) {
     this.headers[name] = value
   }
   removeHeader (name) {
     delete this.headers[name]
   }
-  setStatusCode(val) {
+  setStatusCode (val) {
     this.statusCode = val
   }
   getStatusCode () {
