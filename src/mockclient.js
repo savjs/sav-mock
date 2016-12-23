@@ -2,7 +2,7 @@ import {Request} from './request.js'
 import {Response} from './response.js'
 
 export class MockClient {
-  constructor (props) {
+  constructor () {
     this._maps = {}
   }
   exists (action) {
