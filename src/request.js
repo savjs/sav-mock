@@ -1,8 +1,3 @@
-/*
- * @Description     模拟用Request
- * @File       request.js
- * @Auth       jetiny@hfjy.com
- */
 
 export class Request {
   constructor (opts) {
